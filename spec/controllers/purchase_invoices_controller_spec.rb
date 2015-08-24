@@ -10,6 +10,11 @@ describe PurchaseInvoicesController do
       purchase = create :purchase
       get :show, {id: purchase.to_param}, valid_session
       expect(assigns(:purchase)).to eq(purchase)
+      end
+    it "assigns @template" do
+      purchase = create :purchase
+      get :show, {id: purchase.to_param}, valid_session
+      expect(assigns(:template)).to eq("purchase invoice")
     end
   end
 end
