@@ -20,6 +20,6 @@ en:
     header: Receipt
     print: Receipt
 
-  purchase invoice:
+  purchase_invoice:
     header: Purchase Invoice
   purchase_total: Total
