@@ -25,6 +25,11 @@ describe "Purchases" do
       visit_path "#{purchase_path(purchase)}/invoice"
       expect(page).to have_content (OfficeClerk.config(:footer_left))
     end
+    it "shows items" do
+      purchase = create :purchase
+      visit_path "#{purchase_path(purchase)}/invoice"
+      expect(page).to have_content I18n.t(:description)
+    end
   end
 end
 

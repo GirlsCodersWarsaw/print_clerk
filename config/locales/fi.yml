@@ -20,6 +20,6 @@ fi:
     thanks: "Kirjanpitomme mukaan emme ole saaneet suoritustanne tästä
             laskusta.<br/> <br/>Pyydämme maksamaan laskun heti. <br/><br/>
             Mikäli lasku on jo maksettu, tämä maksuhuomautus on aiheeton."
-  purchase invoice:
+  purchase_invoice:
       header: Purchase Invoice
   purchase_total: Total
